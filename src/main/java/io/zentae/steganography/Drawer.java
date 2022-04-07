@@ -1,4 +1,4 @@
-package io.zentae.steganography.image;
+package io.zentae.steganography;
 
 import java.awt.*;
 
