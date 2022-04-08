@@ -2,12 +2,13 @@ package io.zentae.steganography;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.nio.charset.StandardCharsets;
 
-public class EncryptedDrawer extends Drawer {
+public class EncryptorDrawer extends Drawer {
 
     private final byte[] message;
 
-    public EncryptedDrawer(Image image, byte[] message) {
+    public EncryptorDrawer(Image image, byte[] message) {
         super(image);
         this.message = message;
     }
