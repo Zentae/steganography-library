@@ -29,10 +29,8 @@ public class ImageDecoder implements Decoder<Image> {
                 int sourceRGB = sourceImage.getRGB(x, y);
                 int diff = encodedRGB - sourceRGB;
                 // Check if the current pixel has some data encoded.
-                if(diff != 0) {
-                    System.out.println(diff);
+                if(diff != 0)
                     bytes.add((byte) Math.abs(diff));
-                }
             }
         }
         // Return encoded data.
